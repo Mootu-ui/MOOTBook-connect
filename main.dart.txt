@@ -15,7 +15,20 @@ class MyApp extends StatelessWidget {
           title: const Text('MOOTBook Connect' ),
         ),
         body: const Center(
-          child: Text('Publiez votre premier live !'),
+          child: Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    Text('Publiez votre premier live !'),
+    SizedBox(height: 20),
+    ElevatedButton(
+      onPressed: () {
+        // Action à faire quand on clique sur le bouton
+      },
+      child: Text('Commencer'),
+    ),
+  ],
+), 
+
         ),
       ),
     );
